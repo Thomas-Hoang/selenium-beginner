@@ -23,10 +23,10 @@ public class TestBase {
 		driver.manage().window().maximize();
 
 		// Implicit wait
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-		// To open Exchange site
-		driver.get("https://exchange-staging.z.com/");
+		// To open OrangeHRM site
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 
 	@AfterSuite
